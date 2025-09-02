@@ -1,0 +1,163 @@
+.container {
+  padding: 0;
+  padding-bottom: 120rpx; /* 为底部操作栏留出空间 */
+}
+
+.main-image {
+  width: 100%;
+  display: block;
+}
+
+.author-section {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 30rpx;
+  margin: 20rpx 30rpx;
+}
+
+.author-avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+.author-info {
+  flex: 1;
+}
+
+.author-name {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.publish-time {
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 5rpx;
+}
+
+.follow-btn {
+  background-color: #eef5ff;
+  color: #4a90e2;
+  padding: 10rpx 25rpx;
+  border-radius: 30rpx;
+  font-size: 26rpx;
+}
+
+.info-section, .comment-section {
+  padding: 30rpx;
+  margin: 0 30rpx 30rpx;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.desc {
+  font-size: 28rpx;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 30rpx;
+}
+
+.meta-section {
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-size: 24rpx;
+  margin-bottom: 20rpx;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  margin-right: 40rpx;
+}
+
+.meta-icon {
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 10rpx;
+}
+
+.map-placeholder {
+  height: 200rpx;
+  background-color: #f0f0f0;
+  border-radius: 12rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+}
+
+.section-title {
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-bottom: 30rpx;
+}
+
+.comment-item {
+  display: flex;
+  margin-bottom: 30rpx;
+}
+.comment-item:last-child {
+  margin-bottom: 0;
+}
+
+.comment-avatar {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+.comment-name {
+  font-size: 26rpx;
+  color: #666;
+}
+
+.comment-text {
+  font-size: 28rpx;
+  margin-top: 5rpx;
+  line-height: 1.5;
+}
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 110rpx;
+  background-color: #fff;
+  border-top: 1rpx solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+
+.comment-input {
+  flex: 1;
+  height: 70rpx;
+  background-color: #f7f8fa;
+  border-radius: 35rpx;
+  padding: 0 30rpx;
+  font-size: 28rpx;
+}
+
+.action-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40rpx;
+  font-size: 22rpx;
+  color: #666;
+}
+
+.action-icon {
+  width: 44rpx;
+  height: 44rpx;
+}

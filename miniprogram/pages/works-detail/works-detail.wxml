@@ -1,0 +1,60 @@
+<view class="container">
+  <!-- 顶部图片 -->
+  <image class="main-image" src="{{photo.imageUrl}}" mode="widthFix"></image>
+
+  <!-- 作者信息 -->
+  <view class="author-section card-view">
+    <image class="author-avatar" src="{{photo.avatar}}"></image>
+    <view class="author-info">
+      <view class="author-name">{{photo.username}}</view>
+      <view class="publish-time">发布于 {{photo.createTime}}</view>
+    </view>
+    <view class="follow-btn">+ 关注</view>
+  </view>
+
+  <!-- 作品信息 -->
+  <view class="info-section card-view">
+    <view class="title">{{photo.title}}</view>
+    <view class="desc">{{photo.description}}</view>
+    
+    <!-- 天气与位置信息 -->
+    <view class="meta-section">
+      <view class="meta-item">
+        <image src="/images/icon_weather.png" class="meta-icon"></image>
+        <text>26℃ 晴</text>
+      </view>
+      <view class="meta-item">
+        <image src="/images/icon_location.png" class="meta-icon"></image>
+        <text>{{photo.location}}</text>
+      </view>
+    </view>
+    <view class="map-placeholder">
+       <text>地图预览区域</text>
+    </view>
+  </view>
+
+  <!-- 评论区 -->
+  <view class="comment-section card-view">
+    <view class="section-title">评论 ({{photo.comments.length}})</view>
+    <view class="comment-item" wx:for="{{photo.comments}}" wx:key="index">
+      <image class="comment-avatar" src="{{item.avatar}}"></image>
+      <view class="comment-content">
+        <view class="comment-name">{{item.username}}</view>
+        <view class="comment-text">{{item.text}}</view>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 底部操作栏 -->
+  <view class="bottom-bar">
+    <input class="comment-input" placeholder="留下你的精彩评论..."></input>
+    <view class="action-item">
+      <image src="/images/icon_like.png" class="action-icon"></image>
+      <text>{{photo.likes}}</text>
+    </view>
+    <view class="action-item">
+      <image src="/images/icon_favorite_outline.png" class="action-icon"></image>
+      <text>收藏</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,50 @@
+<view class="container">
+  <view class="upload-area" bindtap="chooseImage">
+    <image wx:if="{{!tempFilePath}}" class="placeholder-icon" src="/images/icon_add_photo.png"></image>
+    <text wx:if="{{!tempFilePath}}" class="placeholder-text">点击选择照片</text>
+    <image wx:if="{{tempFilePath}}" class="preview-image" src="{{tempFilePath}}" mode="aspectFill"></image>
+  </view>
+
+  <view class="form-section card-view">
+    <input class="title-input" placeholder="填写标题，让作品更生动"></input>
+    <textarea class="desc-input" placeholder="添加更多描述..."></textarea>
+  </view>
+
+  <view class="form-section card-view">
+    <view class="form-item">
+      <view class="form-label">云的类型</view>
+      <view class="form-content">请选择 ></view>
+    </view>
+    <view class="cloud-tags">
+      <view 
+        wx:for="{{cloudTypes}}" 
+        wx:key="index" 
+        class="tag {{selectedType === item ? 'active' : ''}}"
+        bindtap="selectType"
+        data-type="{{item}}"
+      >
+        {{item}}
+      </view>
+    </view>
+  </view>
+  
+  <view class="form-section card-view">
+     <view class="form-item">
+      <view class="form-label">心情标签</view>
+    </view>
+    <view class="cloud-tags">
+      <view class="tag">#治愈</view>
+      <view class="tag">#爱在黄昏</view>
+      <view class="tag">#绚烂</view>
+    </view>
+  </view>
+
+  <view class="form-section card-view">
+     <view class="form-item">
+      <view class="form-label">添加位置</view>
+      <view class="form-content">北京市 海淀区 ></view>
+    </view>
+  </view>
+  
+  <button class="submit-btn main-button">确认发布</button>
+</view>

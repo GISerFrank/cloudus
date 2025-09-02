@@ -1,0 +1,32 @@
+<view class="container">
+  <view class="page-title">发现</view>
+
+  <!-- 核心常驻活动：晨昏美术馆 -->
+  <view class="activity-card main-activity" bindtap="goToDuskActivity">
+    <image class="activity-bg" src="https://placehold.co/800x450/ffb5a7/ffdac1?text=Dusk" mode="aspectFill"></image>
+    <view class="activity-content">
+      <view class="activity-tag">常驻活动</view>
+      <view class="activity-title">晨昏美术馆</view>
+      <view class="activity-desc">捕捉一天中最绚烂的时刻</view>
+    </view>
+  </view>
+
+  <!-- 未来活动预留 -->
+  <view class="section-title">更多主题</view>
+  
+  <view class="activity-card placeholder-1">
+     <view class="activity-content">
+      <view class="activity-tag hot">即将上线</view>
+      <view class="activity-title">寻找奇珍异兽</view>
+      <view class="activity-desc">看看云朵都像什么？</view>
+    </view>
+  </view>
+
+  <view class="activity-card placeholder-2">
+     <view class="activity-content">
+      <view class="activity-tag">往期回顾</view>
+      <view class="activity-title">荚状云摄影赛</view>
+      <view class="activity-desc">发现天空中的飞碟</view>
+    </view>
+  </view>
+</view>

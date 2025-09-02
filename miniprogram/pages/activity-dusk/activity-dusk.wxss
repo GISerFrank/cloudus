@@ -1,0 +1,175 @@
+.container {
+  padding: 0;
+  padding-bottom: 40rpx;
+}
+
+.header {
+  position: relative;
+  height: 450rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.header-content {
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 52rpx;
+  font-weight: bold;
+  letter-spacing: 4rpx;
+  text-shadow: 0 2rpx 10rpx rgba(0,0,0,0.3);
+}
+
+.subtitle {
+  font-size: 28rpx;
+  margin-top: 10rpx;
+  opacity: 0.9;
+}
+
+.time-card {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16rpx;
+  padding: 20rpx 40rpx;
+  margin-top: 40rpx;
+  backdrop-filter: blur(10px);
+  border: 1rpx solid rgba(255, 255, 255, 0.3);
+}
+
+.time-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-label {
+  font-size: 24rpx;
+  opacity: 0.8;
+}
+
+.time-value {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-top: 5rpx;
+}
+
+.time-divider {
+  width: 2rpx;
+  height: 60rpx;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 50rpx;
+}
+
+.feature-bar {
+  margin: -60rpx 30rpx 30rpx;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx;
+}
+
+.feature-title {
+  color: #666;
+  font-size: 24rpx;
+}
+
+.feature-value {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-top: 5rpx;
+}
+.aqi-good { color: #52c41a; }
+.aqi-moderate { color: #faad14; }
+
+.feature-action {
+  background-color: #fff3e0;
+  color: #fa8c16;
+  padding: 15rpx 25rpx;
+  border-radius: 30rpx;
+  display: flex;
+  align-items: center;
+  font-size: 26rpx;
+}
+
+.alarm-icon {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 10rpx;
+}
+
+.gallery-list {
+  padding: 0 30rpx;
+}
+
+.list-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.gallery-item {
+  height: 400rpx;
+  position: relative;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+  color: #fff;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.gallery-title {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.gallery-desc {
+  font-size: 24rpx;
+  opacity: 0.9;
+  margin-top: 5rpx;
+}
+
+.gallery-likes {
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+}
+
+.gallery-likes .like-icon {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 10rpx;
+}

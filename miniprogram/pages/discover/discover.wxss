@@ -1,0 +1,83 @@
+.container {
+  padding: 30rpx;
+}
+
+.page-title {
+  font-size: 48rpx;
+  font-weight: bold;
+  margin-bottom: 30rpx;
+  padding-left: 10rpx;
+}
+
+.activity-card {
+  position: relative;
+  height: 320rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  margin-bottom: 30rpx;
+  color: #fff;
+}
+
+.activity-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.activity-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+}
+
+.activity-tag {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5rpx 15rpx;
+  border-radius: 20rpx;
+  font-size: 22rpx;
+  align-self: flex-start;
+  margin-bottom: 10rpx;
+}
+
+.activity-tag.hot {
+  background-color: #ff4d4f;
+  color: #fff;
+}
+
+.activity-title {
+  font-size: 40rpx;
+  font-weight: bold;
+  text-shadow: 0 2rpx 10rpx rgba(0,0,0,0.3);
+}
+
+.activity-desc {
+  font-size: 26rpx;
+  opacity: 0.9;
+  margin-top: 5rpx;
+}
+
+.section-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+  padding-left: 10rpx;
+}
+
+/* 未来活动占位样式 */
+.placeholder-1 {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+.placeholder-2 {
+  background: linear-gradient(135deg, #2af598, #009efd);
+}
