@@ -5,7 +5,11 @@
     "pages/profile/profile",
     "pages/upload/upload",
     "pages/works-detail/works-detail",
-    "pages/activity-dusk/activity-dusk"
+    "pages/activity-dusk/activity-dusk",
+    "pages/achievements/achievements",
+    "pages/favorites/favorites",
+    "pages/settings/settings",
+    "pages/map-detail/map-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="header">
+    <view class="title">我的成就</view>
+    <view class="subtitle">已点亮 {{unlockedCount}} / {{achievements.length}} 枚徽章</view>
+  </view>
+
+  <view class="achievement-grid">
+    <view class="achievement-item {{item.unlocked ? '' : 'locked'}}" wx:for="{{achievements}}" wx:key="name">
+      <image class="badge-icon" src="{{item.icon}}"></image>
+      <view class="badge-name">{{item.name}}</view>
+      <view class="badge-desc">{{item.description}}</view>
+    </view>
+  </view>
+</view>

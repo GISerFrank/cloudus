@@ -1,9 +1,9 @@
 <view class="container">
-  <!-- 顶部导航和筛选（预留） -->
+  <!-- 顶部导航和筛选 -->
   <view class="top-nav">
-    <view class="nav-item active">推荐</view>
-    <view class="nav-item">最新</view>
-    <view class="nav-item">附近</view>
+    <view class="nav-item {{activeTab === 'recommend' ? 'active' : ''}}" data-tab="recommend" bindtap="switchTab">推荐</view>
+    <view class="nav-item {{activeTab === 'latest' ? 'active' : ''}}" data-tab="latest" bindtap="switchTab">最新</view>
+    <view class="nav-item {{activeTab === 'nearby' ? 'active' : ''}}" data-tab="nearby" bindtap="switchTab">附近</view>
   </view>
 
   <!-- 云图瀑布流 -->

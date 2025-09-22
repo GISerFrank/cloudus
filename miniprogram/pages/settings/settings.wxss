@@ -1,0 +1,16 @@
+.container { padding: 30rpx; }
+.menu-list { padding: 0 30rpx; }
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 110rpx;
+  font-size: 30rpx;
+  border-bottom: 1rpx solid #f7f8fa;
+}
+.menu-item:last-child { border-bottom: none; }
+.arrow { color: #ccc; }
+.content { color: #999; font-size: 28rpx; }
+.logout-btn-wrapper { margin-top: 60rpx; }
+.logout-btn { background-color: #fff; color: #ff4d4f; }
+.logout-btn::after { border: 1rpx solid #f0f0f0; }

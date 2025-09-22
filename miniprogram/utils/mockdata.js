@@ -9,6 +9,8 @@ const mockList = [
     likes: 128,
     isGallery: false,
     location: '北京市, 海淀区',
+    latitude: 39.9929,
+    longitude: 116.3104,
     createTime: '2小时前',
     comments: [
       { username: '云海漫步', avatar: 'https://placehold.co/100x100/cdb4db/ffffff?text=B', text: '拍得真好看！'},
@@ -25,6 +27,8 @@ const mockList = [
     likes: 256,
     isGallery: false,
     location: '上海市, 浦东新区',
+    latitude: 31.2244,
+    longitude: 121.4759,
     createTime: '5小时前',
     comments: []
   },
@@ -35,24 +39,13 @@ const mockList = [
     imageUrl: 'https://placehold.co/800x400/fec5bb/ffffff?text=Sunset', 
     avatar: 'https://placehold.co/100x100/bde0fe/ffffff?text=C', 
     username: 'Skywalker', 
-    likes: 99,
+    likes: 999,
     isGallery: true,
     location: '杭州市, 西湖区',
+    latitude: 30.2461,
+    longitude: 120.1265,
     createTime: '昨天 18:50',
     comments: [ { username: '追光者A', avatar: 'https://placehold.co/100x100/ffc8dd/ffffff?text=A', text: '好美啊！'} ]
-  },
-  { 
-    id: 4, 
-    title: '高空中的卷积云',
-    description: '俗称鱼鳞云，预示着天气可能要有变化。',
-    imageUrl: 'https://placehold.co/400x450/a2d2ff/ffffff?text=Cloud+4', 
-    avatar: 'https://placehold.co/100x100/ffc8dd/ffffff?text=D', 
-    username: '风之谷', 
-    likes: 301,
-    isGallery: false,
-    location: '重庆市, 渝中区',
-    createTime: '昨天 14:20',
-    comments: []
   },
    { 
     id: 5, 
@@ -64,6 +57,8 @@ const mockList = [
     likes: 1314,
     isGallery: true,
     location: '泰山之巅',
+    latitude: 36.2552,
+    longitude: 117.1002,
     createTime: '今天 05:40',
     comments: []
   },

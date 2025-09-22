@@ -1,7 +1,8 @@
-const mockData = require('../../utils/mockdata.js'); // 引入模拟数据
+const mockData = require('../../utils/mockdata.js'); 
 
 Page({
   data: {
+    activeTab: 'recommend', // 当前激活的tab
     mockList: [],
     leftList: [],
     rightList: []
@@ -9,13 +10,30 @@ Page({
 
   onLoad: function () {
     this.setData({
-      mockList: mockData.mockList // 从外部文件加载数据
+      mockList: mockData.mockList 
     }, () => {
       this.loadWaterfallData();
     });
   },
 
+  // 新增：切换页签
+  switchTab: function(e) {
+    const tab = e.currentTarget.dataset.tab;
+    if (tab === this.data.activeTab) {
+      return;
+    }
+    this.setData({
+      activeTab: tab
+    });
+    // todo: 后续在这里根据不同的tab请求不同的数据
+    wx.showToast({
+      title: `已切换到'${tab}'`,
+      icon: 'none'
+    })
+  },
+
   loadWaterfallData: function() {
+    // 瀑布流数据分配逻辑
     const { mockList } = this.data;
     const leftList = [];
     const rightList = [];
@@ -35,7 +53,6 @@ Page({
     });
   },
 
-  // 新增：跳转到详情页
   goToDetail: function(e) {
     const id = e.currentTarget.dataset.id;
     wx.navigateTo({

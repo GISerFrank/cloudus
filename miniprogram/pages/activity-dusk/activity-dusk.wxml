@@ -25,10 +25,10 @@
       <view class="feature-title">今日霞光绚丽指数</view>
       <view class="feature-value aqi-good">85分 · 宜观赏</view>
     </view>
-    <view class="feature-action">
+    <view class="feature-action" bindtap="showAlarmClock">
       <image src="/images/icon_alarm.png" class="alarm-icon"></image>
       <text>追光闹钟</text>
-    </view>
+  </view>
   </view>
 
   <!-- 霞光作品列表 -->

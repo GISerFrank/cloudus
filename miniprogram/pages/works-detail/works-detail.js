@@ -6,13 +6,20 @@ Page({
   },
   onLoad: function (options) {
     const id = options.id;
-    // 根据id从模拟数据中查找对应的作品
     const photo = mockData.mockList.find(item => item.id == id);
     if(photo) {
       this.setData({ photo });
       wx.setNavigationBarTitle({
-        title: photo.title // 动态设置页面标题
+        title: photo.title
       })
     }
+  },
+
+  // 新增：打开地图详情页
+  openMap: function() {
+    const { latitude, longitude, location } = this.data.photo;
+    wx.navigateTo({
+      url: `/pages/map-detail/map-detail?lat=${latitude}&lng=${longitude}&location=${location}`
+    })
   }
 });

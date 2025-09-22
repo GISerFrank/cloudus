@@ -28,7 +28,7 @@
         <text>{{photo.location}}</text>
       </view>
     </view>
-    <view class="map-placeholder">
+    <view class="map-placeholder" bindtap="openMap">
        <text>地图预览区域</text>
     </view>
   </view>

@@ -1,0 +1,6 @@
+<view class="container">
+  <view class="page-title">我的收藏</view>
+  <view class="works-grid">
+    <image class="grid-item" wx:for="{{favoritesList}}" wx:key="id" src="{{item.imageUrl}}" mode="aspectFill" bindtap="goToDetail" data-id="{{item.id}}"></image>
+  </view>
+</view>
